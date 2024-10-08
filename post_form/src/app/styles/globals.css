@@ -1,0 +1,67 @@
+.container {
+  width: 100%;
+  height: 98vh;
+  background: linear-gradient(to top, #000000, #440444);
+}
+
+#userRegister {
+  position: relative;
+  left: 43vw;
+  top: 20vh;
+  display: flex;
+  flex-direction: column;
+  height: 200px;
+  width: 200px;
+  align-items: center;
+  padding: 30px;
+  display: flex;
+  border: 2px solid #fff;
+  border-radius: 8%;
+  flex-direction: column;
+  gap: 10px;
+  background-color: #cb06fc;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 15);
+  animation: colorChange 2s;
+}
+
+@keyframes colorChange {
+  from {
+    background: linear-gradient(to top, #000000, #440444);
+    transform: translateY(60vh);
+  }
+  to {
+    background-color: #cb06fc;
+    transform: translateY(0vh);
+  }
+}
+
+#userRegister > input {
+  border-radius: 8%;
+}
+
+#userRegister > .invalid {
+  border-color: red;
+}
+
+#userRegister > label {
+  font-weight: bolder;
+  color: #fff;
+}
+
+#userRegister > button {
+  padding: 10px 20px;
+  background-color: #e579e9;
+  color: #fff;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  font-size: 1em;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  transition: background-color 0.3s;
+}
+
+#userRegister > button:hover {
+  background-color: #ff1aff;
+}
