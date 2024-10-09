@@ -29,8 +29,8 @@ export default function Login() {
       {error && <h1>{error}</h1>}
       {users.map((user, index) => (
         <div key={index}>
-          <h2>User Name: {user.userName}</h2>
-          <h2>Password: {user.userPassword}</h2>
+          <h2>User Name: {user.username}</h2>
+          <h2>Password: {user.password}</h2>
         </div>
       ))}
     </>
